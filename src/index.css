@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-detail: #e4a691;
+  --color-primary: #f7efd8;
+  --color-secondary: #c8c8a9;
+  --color-muted: #556270;
+  --color-dark: #273142;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-muted);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-dark);
+  letter-spacing: -0.01em;
+}
+
+button {
+  font-family: inherit;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-detail text-dark font-semibold px-6 py-3 shadow-card transition-all duration-200 hover:bg-[#d89580] hover:shadow-soft hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 disabled:pointer-events-none;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-dark/20 bg-transparent text-dark font-medium px-5 py-2.5 transition-all duration-200 hover:border-dark/40 hover:bg-secondary/40;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-dark/80 font-medium transition-colors hover:bg-secondary/50 hover:text-dark;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-all duration-150;
+  }
+
+  .chip-default {
+    @apply border-dark/10 bg-white/60 text-dark/70 hover:border-detail/40 hover:text-dark;
+  }
+
+  .chip-active {
+    @apply border-detail bg-detail/15 text-dark;
+  }
+
+  .input-base {
+    @apply w-full rounded-xl border border-dark/10 bg-white/70 px-4 py-3 text-dark placeholder:text-muted/60 outline-none transition-all duration-150 focus:border-detail focus:ring-2 focus:ring-detail/30;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white/70 backdrop-blur-sm shadow-card transition-all duration-300 hover:shadow-soft hover:-translate-y-1;
+  }
+
+  .modal-backdrop {
+    @apply fixed inset-0 z-40 bg-dark/50 backdrop-blur-sm animate-[fadeIn_200ms_ease-out];
+  }
+
+  .modal-panel {
+    @apply fixed z-50 bg-primary shadow-2xl animate-[slideIn_250ms_cubic-bezier(0.16,1,0.3,1)];
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(16px) scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.scrollbar-slim::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-slim::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-slim::-webkit-scrollbar-thumb {
+  background: rgba(39, 49, 66, 0.2);
+  border-radius: 999px;
+}

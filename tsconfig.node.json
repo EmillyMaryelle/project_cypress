@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "es2022",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "skipLibCheck": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"]
+    }
+  },
+  "include": ["vite.config.ts", "api", "shared"]
+}
