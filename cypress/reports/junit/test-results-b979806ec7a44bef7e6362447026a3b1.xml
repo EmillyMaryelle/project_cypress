@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.406" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-07-27T21:49:16" tests="0" file="cypress\e2e\auth\login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Autenticacao - login" timestamp="2026-07-27T21:49:16" tests="3" time="9.405" failures="0">
+    <testcase name="Autenticacao - login realiza login com a conta demo pela pagina de login" time="2.466" classname="realiza login com a conta demo pela pagina de login">
+    </testcase>
+    <testcase name="Autenticacao - login exibe erro para credenciais invalidas" time="2.095" classname="exibe erro para credenciais invalidas">
+    </testcase>
+    <testcase name="Autenticacao - login abre o login pelo header e navega para criar conta pelo modal" time="3.761" classname="abre o login pelo header e navega para criar conta pelo modal">
+    </testcase>
+  </testsuite>
+</testsuites>

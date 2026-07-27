@@ -51,7 +51,6 @@ function salvarUsuariosCadastrados(lista: UsuarioComSenha[]): void {
   try {
     localStorage.setItem(STORAGE_KEY_USUARIOS_CADASTRADOS, JSON.stringify(lista));
   } catch {
-      // noop
     }
 }
 
@@ -124,7 +123,6 @@ export const useAuthStore = create<AuthState>((set) => ({
   login: async (payload) => {
     set({ loading: true, erro: null, sucessoCadastro: null });
     try {
-      // --- PRIMEIRO tenta os usuários mock na API (contas de demonstração).
       let usuarioEncontrado: Usuario | null = null;
       try {
         const resp = await fetch('/api/login', {
@@ -139,10 +137,8 @@ export const useAuthStore = create<AuthState>((set) => ({
           }
         }
       } catch {
-        // --- API offline; segue para cache.
       }
 
-      // --- SEGUNDO, se não encontrou na API, tenta os usuários cadastrados no cache.
       if (!usuarioEncontrado) {
         const email = payload.email.trim().toLowerCase();
         const cadastrados = lerUsuariosCadastrados();
@@ -168,8 +164,6 @@ export const useAuthStore = create<AuthState>((set) => ({
       }
     },
   cadastrar: async (payload) => {
-    // --- Cadastro 100% local, salvo no cache do navegador (localStorage)
-    // --- NÃO usa banco de dados e NÃO usa backend persistente.
     // --- Se o cache/locale for limpo, os cadastros somem.
     set({ loading: true, erro: null, sucessoCadastro: null });
     try {
@@ -189,8 +183,8 @@ export const useAuthStore = create<AuthState>((set) => ({
         erro: null,
         sucessoCadastro:
           payload.tipo === 'cliente'
-            ? 'Conta criada! Seja bem-vindo(a)! (Salva no cache do seu navegador)'
-            : 'Conta de fornecedor criada! (Salva no cache do seu navegador)',
+            ? 'Conta criada! Seja bem-vindo(a)!'
+            : 'Conta de fornecedor criada! Seja bem-vindo(a)!',
       });
       return true;
     } catch {

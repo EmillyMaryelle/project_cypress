@@ -23,7 +23,7 @@ export default function CategoryChips({ categorias, ativa, aoSelecionar }: Props
             Navegue por categoria
           </h2>
           <p data-cy="category-subtitle" className="text-muted/80 text-sm sm:text-base mt-1">
-            Filtre os produtos com o seu estilo preferido.
+            Filtragem.
           </p>
         </div>
       </div>

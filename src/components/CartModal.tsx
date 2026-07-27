@@ -24,7 +24,7 @@ export default function CartModal() {
     <ModalPanel
       aoFechar={fechar}
       posicao="right"
-      title="Seu carrinho"
+      title="Carrinho"
       dataCy="cart-modal"
     >
       <div className="flex flex-col h-full">
@@ -204,9 +204,37 @@ export default function CartModal() {
                 </button>
               </div>
               {!usuario && (
-                <p data-cy="cart-modal-login-required" className="text-xs text-muted/70 text-center pt-1">
-                  Voce precisa estar logado para finalizar a compra.
-                </p>
+                <div className="space-y-3 pt-1">
+                  <p data-cy="cart-modal-login-required" className="text-xs text-muted/70 text-center">
+                    Voce precisa estar logado para finalizar a compra.
+                  </p>
+                  <div className="grid grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      data-cy="cart-modal-go-login"
+                      className="btn-outline !py-2.5"
+                      onClick={() => {
+                        fechar();
+                        abrir('login');
+                        navigate('/login');
+                      }}
+                    >
+                      Login
+                    </button>
+                    <button
+                      type="button"
+                      data-cy="cart-modal-go-cadastro"
+                      className="btn-primary !py-2.5"
+                      onClick={() => {
+                        fechar();
+                        abrir('cadastro');
+                        navigate('/login');
+                      }}
+                    >
+                      Cadastre-se
+                    </button>
+                  </div>
+                </div>
               )}
             </div>
           </>

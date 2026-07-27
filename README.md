@@ -115,6 +115,16 @@ Isso iniciara:
 | `npm run build`       | Gera build de producao                          |
 | `npm run preview`     | Visualiza a build de producao                   |
 | `npm run lint`        | Roda o ESLint                                   |
+| `npm run cy:open`     | Abre o Cypress em modo interativo               |
+| `npm run cy:run`      | Executa a suite Cypress em modo headless        |
+| `npm run test:e2e`    | Sobe a aplicacao e roda os testes E2E           |
+
+---
+
+## Testes E2E com Cypress
+
+Estrutura utilizada para os testes automatizados:
+
 
 ---
 
@@ -333,63 +343,6 @@ curl -X POST http://localhost:4000/api/login \
 **Resposta erro (401) se credenciais invalidas:**
 ```json
 { "sucesso": false, "erro": "Credenciais invalidas." }
-```
-
----
-
-## Estrutura de Pastas
-
-```
-project-cypress/
-├── api/                          # Backend Express
-│   ├── data/
-│   │   └── mockData.ts           # Dados mock (produtos, categorias, usuarios demo)
-│   ├── routes/
-│   │   ├── produtos.ts
-│   │   ├── categorias.ts
-│   │   ├── login.ts
-│   │   └── cadastro.ts
-│   └── index.ts                  # Entrada da API
-├── public/                      # Arquivos publicos (favicon, icones)
-├── shared/                      # Tipos compartilhados (TypeScript)
-│   └── types.ts
-├── src/                         # Frontend React
-│   ├── assets/                  # Imagens e SVGs
-│   ├── components/             # Componentes reutilizaveis
-│   │   ├── Header.tsx
-│   │   ├── Hero.tsx
-│   │   ├── CategoryChips.tsx
-│   │   ├── ProductGrid.tsx
-│   │   ├── ProductCard.tsx
-│   │   ├── Footer.tsx
-│   │   ├── ModalPanel.tsx
-│   │   ├── NavModal.tsx
-│   │   ├── CartModal.tsx
-│   │   ├── LoginModal.tsx
-│   │   ├── CadastroModal.tsx    # MODAL NOVO com toggle Cliente/Fornecedor
-│   │   └── Modals.tsx
-│   ├── hooks/                  # Hooks customizados (useApi, useModalBackdrop)
-│   ├── pages/                  # Paginas (rotas)
-│   │   ├── HomePage.tsx
-│   │   ├── CategoryPage.tsx
-│   │   ├── CartPage.tsx
-│   │   └── LoginPage.tsx
-│   ├── stores/                 # Estado global (Zustand)
-│   │   ├── authStore.ts        # Login + Cadastro 100% no localStorage
-│   │   ├── cartStore.ts
-│   │   └── uiStore.ts
-│   ├── utils/                  # Funcoes utilitarias (formatar moeda, etc)
-│   ├── App.tsx                 # App raiz
-│   ├── main.tsx                # Entrada do React
-│   └── index.css               # Estilos globais + Tailwind
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.ts
-├── tsconfig.json
-├── tsconfig.app.json
-└── tsconfig.node.json
 ```
 
 ---

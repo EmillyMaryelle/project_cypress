@@ -96,9 +96,6 @@ export default function CadastroModal() {
                 {sucessoCadastro ?? 'Conta simulada'}
               </span>
             </p>
-            <p>
-              Dados sao mantidos no cache do navegador para demonstracao.
-            </p>
           </div>
           <div className="grid grid-cols-1 gap-3 pt-2">
             <button

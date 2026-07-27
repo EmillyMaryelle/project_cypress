@@ -1,0 +1,23 @@
+{
+  "demo": {
+    "email": "usuario@exemplo.com",
+    "senha": "123456",
+    "nome": "Maria Silva"
+  },
+  "invalid": {
+    "email": "invalido@exemplo.com",
+    "senha": "senha-errada"
+  },
+  "cliente": {
+    "nome": "Cliente teste",
+    "telefone": "(11) 99999-1111",
+    "endereco": "Rua Teste, 100 - Sao Paulo/SP",
+    "senha": "123456"
+  },
+  "fornecedor": {
+    "nomeLoja": "Loja teste",
+    "telefone": "(11) 98888-2222",
+    "endereco": "Av Teste, 200 - Sao Paulo/SP",
+    "senha": "123456"
+  }
+}

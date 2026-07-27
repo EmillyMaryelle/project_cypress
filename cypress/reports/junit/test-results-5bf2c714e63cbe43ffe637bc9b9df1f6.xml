@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.215" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-07-27T21:49:38" tests="0" file="cypress\e2e\cart\carrinho.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Carrinho - fluxo de compra" timestamp="2026-07-27T21:49:38" tests="3" time="9.214" failures="0">
+    <testcase name="Carrinho - fluxo de compra adiciona produto, ajusta quantidade e limpa o carrinho" time="3.455" classname="adiciona produto, ajusta quantidade e limpa o carrinho">
+    </testcase>
+    <testcase name="Carrinho - fluxo de compra exige login para finalizar a compra" time="1.210" classname="exige login para finalizar a compra">
+    </testcase>
+    <testcase name="Carrinho - fluxo de compra finaliza a compra com usuario logado e esvazia o carrinho" time="3.576" classname="finaliza a compra com usuario logado e esvazia o carrinho">
+    </testcase>
+  </testsuite>
+</testsuites>

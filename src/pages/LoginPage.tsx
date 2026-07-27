@@ -110,8 +110,7 @@ export default function LoginPage() {
                     Conta de demonstracao
                   </p>
                   <p>
-                    Esta e uma simulacao. Nenhum dado real foi enviado para um
-                    servidor de autenticacao.
+                    Conta salva no localstorage.
                   </p>
                 </div>
               </div>
@@ -300,18 +299,6 @@ export default function LoginPage() {
                 </Link>
               </>
             )}
-          </div>
-
-          <div className="rounded-3xl bg-white/70 border border-dark/5 shadow-soft p-6 sm:p-7 space-y-3 text-sm text-muted/80">
-            <h3 className="font-display text-xl font-bold text-dark">
-              Por que criar uma conta?
-            </h3>
-            <ul className="space-y-2">
-              <li>Finalize suas compras com mais rapidez</li>
-              <li>Acompanhe seus pedidos em tempo real</li>
-              <li>Receba ofertas exclusivas por e-mail</li>
-              <li>Lista de desejos sincronizada</li>
-            </ul>
           </div>
         </aside>
       </div>

@@ -21,18 +21,13 @@ export default function Hero({ onVerProdutos }: { onVerProdutos?: () => void }) 
         <div className="lg:col-span-7 space-y-7">
           <span data-cy="hero-badge" className="inline-flex items-center gap-2 rounded-full bg-secondary/60 border border-dark/10 px-4 py-1.5 text-sm font-medium text-dark shadow-card">
             <Sparkles className="w-4 h-4 text-detail" strokeWidth={2.2} />
-            Nova colecao outono/inverno
+            Nova colecao, confira
           </span>
           <h1 data-cy="hero-title" className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] text-dark">
             Encontre o seu estilo{' '}
             <span className="text-detail italic">preferido</span> com precos
             que cabem no bolso.
           </h1>
-          <p data-cy="hero-description" className="text-base sm:text-lg text-muted max-w-2xl leading-relaxed">
-            Pecas selecionadas de roupas, acessorios, eletronicos e decoracao
-            para deixar seu dia a dia ainda mais bonito, do conforto da sua
-            casa.
-          </p>
           <div className="flex flex-wrap items-center gap-3">
             <button type="button" data-cy="hero-ver-produtos" onClick={rolar} className="btn-primary">
               Ver produtos

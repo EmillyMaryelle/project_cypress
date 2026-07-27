@@ -7,8 +7,7 @@ export default function Footer() {
             Bella Store
           </p>
           <p className="text-muted/80 leading-relaxed">
-            Uma loja pensada para quem ama beleza, conforto e estilo. Pecas
-            selecionadas com carinho para o seu dia a dia.
+            Uma loja pensada para quem ama Praticidade, Conforto e Estilo.
           </p>
         </div>
         <div data-cy="footer-nav">
@@ -28,16 +27,11 @@ export default function Footer() {
             Contato
           </p>
           <ul className="space-y-2 text-muted/80">
-            <li>contato@bellastore.exemplo</li>
-            <li>(11) 90000-0000</li>
-            <li>Seg a Sex, 9h as 18h</li>
+            <li>contato@exemplo.com</li>
+            <li>(99) 90000-0000</li>
+            <li>Totalmente Online</li>
           </ul>
         </div>
-      </div>
-      <div data-cy="footer-bottom" className="border-t border-dark/5 py-5">
-        <p className="text-center text-xs sm:text-sm text-muted/70 flex items-center justify-center gap-1.5">
-          Feito com carinho usando React + Express. Simulacao de loja.
-        </p>
       </div>
     </footer>
   );

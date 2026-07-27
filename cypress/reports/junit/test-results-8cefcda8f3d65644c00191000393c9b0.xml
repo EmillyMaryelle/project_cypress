@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="24.271" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-07-27T21:48:50" tests="0" file="cypress\e2e\auth\cadastro.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Autenticacao - cadastro" timestamp="2026-07-27T21:48:50" tests="3" time="24.269" failures="0">
+    <testcase name="Autenticacao - cadastro troca os campos dinamicos entre cliente e fornecedor" time="8.211" classname="troca os campos dinamicos entre cliente e fornecedor">
+    </testcase>
+    <testcase name="Autenticacao - cadastro cadastra um cliente e salva no localStorage" time="6.932" classname="cadastra um cliente e salva no localStorage">
+    </testcase>
+    <testcase name="Autenticacao - cadastro cadastra um fornecedor com sucesso" time="7.913" classname="cadastra um fornecedor com sucesso">
+    </testcase>
+  </testsuite>
+</testsuites>

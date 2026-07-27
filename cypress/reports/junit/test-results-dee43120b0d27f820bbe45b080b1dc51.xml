@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.929" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-07-27T21:49:27" tests="0" file="cypress\e2e\catalog\navigation.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Catalogo - navegacao e categorias" timestamp="2026-07-27T21:49:27" tests="3" time="9.928" failures="0">
+    <testcase name="Catalogo - navegacao e categorias carrega a home com os produtos em destaque e filtra por categoria" time="1.826" classname="carrega a home com os produtos em destaque e filtra por categoria">
+    </testcase>
+    <testcase name="Catalogo - navegacao e categorias navega pelas categorias pelo menu lateral" time="5.717" classname="navega pelas categorias pelo menu lateral">
+    </testcase>
+    <testcase name="Catalogo - navegacao e categorias retorna para a home a partir da pagina de categoria" time="1.060" classname="retorna para a home a partir da pagina de categoria">
+    </testcase>
+  </testsuite>
+</testsuites>

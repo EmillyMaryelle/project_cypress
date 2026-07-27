@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="11.852" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-07-27T21:49:49" tests="0" file="cypress\e2e\orders\pedido-compra.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Pedidos - efetuar pedido de compra" timestamp="2026-07-27T21:49:49" tests="1" time="11.844" failures="0">
+    <testcase name="Pedidos - efetuar pedido de compra efetua um pedido de compra completo com dois produtos" time="11.119" classname="efetua um pedido de compra completo com dois produtos">
+    </testcase>
+  </testsuite>
+</testsuites>

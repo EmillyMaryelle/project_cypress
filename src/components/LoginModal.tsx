@@ -229,7 +229,7 @@ export default function LoginModal() {
         </div>
 
         <p className="text-xs text-muted/70 text-center">
-          Ao entrar, voce concorda com os termos simulados da loja.
+          Ao entrar, voce concorda com os termos de uso da loja.
         </p>
       </form>
     </ModalPanel>

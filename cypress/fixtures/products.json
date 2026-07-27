@@ -1,0 +1,20 @@
+{
+  "blusaLinho": {
+    "id": 1,
+    "nome": "Blusa Linho Bege",
+    "categoria": "roupas",
+    "preco": 149.9
+  },
+  "relogio": {
+    "id": 5,
+    "nome": "Relógio Minimalista",
+    "categoria": "acessorios",
+    "preco": 389.0
+  },
+  "foneBluetooth": {
+    "id": 8,
+    "nome": "Fone Bluetooth Premium",
+    "categoria": "eletronicos",
+    "preco": 549.0
+  }
+}
