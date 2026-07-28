@@ -6,7 +6,7 @@
 
 ## Avisos:
 
-> Este projeto **NAO usa banco de dados os dados são armazenados em localstorage
+> Este projeto **NAO** usa banco de dados, os dados são armazenados em localstorage
 ---
 
 ## Funcionalidades
