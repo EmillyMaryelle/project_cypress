@@ -4,10 +4,9 @@
 > Incluindo o cypress como ferramenta de automacao.
 ---
 
-## Aviso Importante: Sem Banco de Dados
+## Avisos:
 
-> Este projeto **NAO usa banco de dados**.
-> Dados armazenados em localstorage
+> Este projeto **NAO usa banco de dados os dados são armazenados em localstorage
 ---
 
 ## Funcionalidades
