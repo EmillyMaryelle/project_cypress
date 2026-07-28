@@ -1,7 +1,7 @@
 # Bella Store -
 
 > E-commerce completo construido com **React + TypeScript + Node/Express + Tailwind CSS**. Inclui exibicao de produtos, filtros por categoria, carrinho de compras, login e **criacao de contas Cliente/Fornecedor**.
-> Incluindo também o cypress como ferramenta de automacao.
+> Incluindo o cypress como ferramenta de automacao.
 ---
 
 ## Aviso Importante: Sem Banco de Dados
