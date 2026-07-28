@@ -1,30 +1,13 @@
-# Bella Store - Site de Loja Simples
+# Bella Store - 
 
 E-commerce completo construido com **React + TypeScript + Node/Express + Tailwind CSS**. Inclui exibicao de produtos, filtros por categoria, carrinho de compras, login e **criacao de contas Cliente/Fornecedor**.
-
+Incluindo também o cypress como ferramenta de automacao.
 ---
 
 ## Aviso Importante: Sem Banco de Dados
 
 > Este projeto **NAO usa banco de dados**.
->
-> - **Usuarios MOCK (demonstracao)** - fixos na API (servidor Node), existem enquanto o backend estiver rodando.
-> - **Novos cadastros (Cliente/Fornecedor)** - sao salvos **exclusivamente no cache/localStorage do navegador**.
-> - **Se voce limpar o cache do navegador, fechar a aba anonima ou mudar de navegador/dispositivo, os novos cadastros somem permanentemente.**
-> - **Produtos e categorias** continuam vindo da API (mockados em memoria do servidor Node, sem banco).
-
----
-
-## Paleta de Cores
-
-| Cor        | Hex       | Descricao                                   |
-|------------|-----------|---------------------------------------------|
-| `detail`   | `#e4a691` | Detalhes, CTAs, badges e botoes primarios   |
-| `primary`  | `#f7efd8` | Cor primaria / fundo do site                |
-| `secondary`| `#c8c8a9` | Elementos neutros / fundos secundarios      |
-| `muted`    | `#556270` | Texto principal                             |
-| `dark`     | `#273142` | Texto escuro / cabecalhos                   |
-
+> Dados armazenados em localstorage
 ---
 
 ## Funcionalidades
