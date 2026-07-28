@@ -1,4 +1,4 @@
-# Bella Store -
+# Bella Store 
 
 > E-commerce completo construido com **React + TypeScript + Node/Express + Tailwind CSS**. Inclui exibicao de produtos, filtros por categoria, carrinho de compras, login e **criacao de contas Cliente/Fornecedor**.
 > Incluindo o cypress como ferramenta de automacao.
@@ -330,11 +330,9 @@ curl -X POST http://localhost:4000/api/login \
 
 ---
 
-## Personalizando os Dados
+## Report do Cypress
 
-Para editar/adicionar produtos, categorias ou usuarios de **demonstracao** (via API), edite o arquivo [api/data/mockData.ts](file:///c:/Users/Emilly/project-cypress/api/data/mockData.ts). A API reinicia automaticamente a cada alteracao (graças ao `tsx watch`).
-
-> Novos usuarios cadastrados no site **nao sao salvos neste arquivo**. Eles ficam somente no `localStorage` do navegador de quem criou. Se quiser transforma-los em contas mock, copie os dados do seu navegador e cole em `mockData.ts`.
+Ultilizei o junit com xml para o retorno dos testes, incluindo evidencia dos screenchots do inicio o fim do fluxo.
 
 ---
 
